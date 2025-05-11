@@ -1,0 +1,30 @@
+/* medida relativa da pagina equivalente a pixels */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+.pai {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.color-one {
+    width: 100vw;
+    height: 100vh;
+    background-color: blueviolet;
+}
+
+.color-two {
+    width: 100vw;
+    height: 100vh;
+    background-color: forestgreen;
+}

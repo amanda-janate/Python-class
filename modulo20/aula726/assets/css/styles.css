@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 20px;
+}
+
+p {
+    margin: 0 0 20px;
+}
+.two-columns {
+    display: flex;
+}
+
+.two-columns .col {
+    display: flex;
+    flex-direction: column;
+    background-color: limegreen;
+    margin: 15px;
+    padding: 30px;
+}
+
+.gallery {
+    flex-flow: row wrap;
+    display: flex;
+}
+
+.gallery .img {
+    /* width: 100%; */
+    height: 50px;
+    background-color: darkolivegreen;
+    flex: 1 0 20%;
+    margin: 10px;
+}

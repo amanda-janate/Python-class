@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+.heading {
+    transition: all 500ms ease-in-out;
+}
+/* quando passar o mause */
+.heading:hover {
+    background: green;
+    color:white;
+}
+/* seleciona todos os links */
+a {
+    color: darkgreen;
+}
+/* seleciona todos os links nao clicados */
+a:link {
+    color: orangered;
+}
+/* seleciona todos os links visitados */
+a:visited {
+    color: darkmagenta;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background: lightgreen;
+    cursor: not-allowed;
+}
+
+input:enabled {
+    background: lightcoral;
+}
+input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+input:checked+p {
+    background:rgba(0, 0, 0, 0.8);
+    color:wheat;
+}
+input:not(:checked)+p {
+    background:rgba(213, 171, 226, 0.8);
+}
+/* nth-child funciona para qualquer grupo de irmaos */
+/* selecionar itens pares e impares */
+ul li:nth-child(odd) {
+    background-color: blueviolet;
+}
+ul li:nth-child(even) {
+    background-color: darkturquoise;
+}
+/* com o n tem um passo, vai de 3 em 3 por exemplo
+sem o n seleciona somente o indice especificado
+*/
+ul li:nth-child(3n) {
+    background-color: darkgoldenrod;
+}
+/* a partir do segundo começa a contar de 3 em 3 */
+ul li:nth-child(3n+2) {
+    background-color: magenta;
+}

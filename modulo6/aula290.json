@@ -1,0 +1,10 @@
+{
+  "characteres": [
+    "Frodo",
+    "Sam"
+  ],
+  "imdb_rating": 8.8,
+  "is_movie": true,
+  "title": "The Lord of the rings",
+  "year": 2001
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu HTML</title>
+    <style>
+        /* todas as tags h1 recebem esse comando */
+        h1 {
+            background: red;
+        }
+        p {
+            background: blueviolet;
+        }
+        /* escolhendo por id */
+        /* #header-2 {
+            background: olivedrab;
+        } */
+        /* escolhendo por classe (o id prevalece sobre a classe)*/
+        .red-background {
+            background: rgb(0, 204, 255);
+        }
+        .bold {
+            color:pink
+        }
+    </style>
+</head>
+<body>
+    <h1 id="header-1" class="red-background borda-esquerda">Header 1</h1>
+    <!-- id não se repete mas class pode -->
+    <h1 id="header-2" class="red-background borda-esquerda">Header 2</h1>
+    <p>Um <b class="bold">Paragrafo</b></p>
+</body>
+</html>

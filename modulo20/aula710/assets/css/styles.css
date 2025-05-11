@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    /* padding: 0; */
+}
+
+/* criando pseudo elementos */
+ul li::after {
+    content: ' - ';
+    background-color: aqua;
+}
+ul li::before {
+    content: ' - ';
+    background-color: slateblue;
+    color: white;
+}
+
+p::first-letter {
+    font-size: 40px;
+    display: block;
+    float: left;
+    margin: 0 10px 0 0;
+
+}
+
+p::first-line {
+    background-color: aqua;
+}
+
+p::selection {
+    background-color: blueviolet;
+    color: white;
+}

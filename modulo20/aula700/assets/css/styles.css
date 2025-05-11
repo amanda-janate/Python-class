@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* p, h1 {
+    color:purple;
+}
+
+body div section p {
+    color:dodgerblue;
+}
+
+body div section p,
+body div section h1 {
+    color:dodgerblue;
+}
+
+.caixa {
+    background: violet;
+    height: 120px;
+    width: 120px;
+} */
+/* seleciona o p seguinte ao h1 dentro de pai */
+.pai h1+p {
+    color:violet;
+}
+/* seleciona todos os p seguintes ao h1 dentro de pai */
+.pai h1~p {
+    background: grey;
+}
+/* se atributo começa com a palavra especificada funciona */
+/* [meu-atributo ^="valor"] {
+    background: black;
+    color:aquamarine;
+} */
+/* se atributo termina com a palavra especificada funciona */
+/* [meu-atributo $="2"] {
+    background: black;
+    color:aquamarine;
+} */
+/* se atributo contem a palavra especificada funciona */
+[meu-atributo *="teste"] {
+    background: black;
+    color:aquamarine;
+}

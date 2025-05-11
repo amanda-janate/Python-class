@@ -1,0 +1,16 @@
+p {
+    color: rgba(89, 23, 136, 0.692);
+    background-color: lightcyan;
+    font-size: 20px;
+    font-style: oblique;
+    font-weight: bold;
+    /* direction: rtl; */
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    line-height: 30px;
+    text-align: center;
+    /* text-decoration: underline; */
+    /* text-indent: 50px; */
+    text-shadow: 1px 1px 10px blue;
+    /* text-transform: lowercase; */
+}

@@ -8,6 +8,8 @@
     "python.languageServer": "Pylance",
     "flake8.enabled" : true,
     "files.trimTrailingWhitespace": true,
+    "python.terminal.activateEnvironment": false,
+    "python.terminal.activateEnvInCurrentTerminal": false,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python",
         "editor.tabSize": 4,

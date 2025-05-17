@@ -25,7 +25,7 @@ def make_chrome_browser(*options: str) -> webdriver.Chrome:
     return chrome_browser
 
 if __name__ == '__main__':
-    TIME_WAIT = 60
+    TIME_WAIT = 20
 
     options = ()
 
@@ -33,16 +33,16 @@ if __name__ == '__main__':
 
     browser.get('https://www.google.com.br/')
 
-    # search_box = WebDriverWait(browser, TIME_WAIT).until(
-    #     EC.presence_of_element_located(
-    #         (By.ID, 'APjFqb')
-    #     )
-    # )
-    # search_box.send_keys('Hello World')
-    # search_box.send_keys(Keys.ENTER)
+    search_box = WebDriverWait(browser, TIME_WAIT).until(
+        EC.presence_of_element_located(
+            (By.ID, 'APjFqb')
+        )
+    )
+    search_box.send_keys('Hello World')
+    search_box.send_keys(Keys.ENTER)
 
-    # results = browser.find_element(By.ID, 'search')
-    # links = results.find_elements(By.TAG_NAME, 'a')
-    # links[0].click()
+    results = browser.find_element(By.ID, 'search')
+    links = results.find_elements(By.TAG_NAME, 'a')
+    links[0].click()
 
     sleep(TIME_WAIT)

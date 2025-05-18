@@ -1,9 +1,9 @@
 {
-    "workbench.colorTheme": "Dark Material Dracula",
+    "workbench.colorTheme": "JellyFish",
     "workbench.startupEditor": "none",
     "explorer.compactFolders": false,
     "editor.rulers": [80, 120],
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "vs-seti",
     "python.analysis.typeCheckingMode": "basic",
     "python.languageServer": "Pylance",
     "flake8.enabled" : true,

@@ -33,7 +33,7 @@ class ButtonGrid(QGridLayout):
         self._left = None
         self._right = None
         self._op = None
-        self._equationInitial = 'Initial text'
+        self._equationInitial = ''
         self.equation = self._equationInitial
 
         self._gridMask = [
@@ -91,7 +91,7 @@ class ButtonGrid(QGridLayout):
         if text in '+-/*^':
             self._connectClicked(
                 button,
-                self._makeSlot(self._configLeftOp, button)
+                self._makeSlot(self._configLeftOp, text)
             )
 
         if text == '=':

@@ -40,6 +40,7 @@ qss = f"""
     }}
 """
 
+
 def setTheme(app):
     app.setStyleSheet(qdarkstyle.load_stylesheet_pyside6())
 

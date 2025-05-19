@@ -1,4 +1,6 @@
-from PySide6.QtWidgets import QApplication, QMainWindow, QWidget, QVBoxLayout, QLabel
+from PySide6.QtWidgets import (QMainWindow, QWidget,
+                               QVBoxLayout, QMessageBox)
+
 
 class MainWindow(QMainWindow):
     def __init__(self, parent: QWidget | None = None, *args, **kwargs):
@@ -14,11 +16,12 @@ class MainWindow(QMainWindow):
         self.setWindowTitle('CALCULADORA')
 
     def adjustFixedSize(self):
-        #end of the script
+        # end of the script
         self.adjustSize()
         self.setFixedSize(self.width(), self.height())
 
     def addGridtoVLayout(self, widget: QWidget):
         self.vLayout.addWidget(widget)
 
-
+    def mkMsgBox(self):
+        return QMessageBox(self)

@@ -1,13 +1,13 @@
 '''Calculadora com PySide6'''
 import sys
-from PySide6.QtWidgets import QApplication, QLabel
+from PySide6.QtWidgets import QApplication
 from main_window import MainWindow
 from vars import ICON_PATH
 from PySide6.QtGui import QIcon
 from display import Display
 from info import Info
 from styles import setTheme
-from button import Button, ButtonGrid
+from button import ButtonGrid
 
 
 if __name__ == '__main__':
@@ -15,10 +15,10 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
 
-    #Theme
+    # Theme
     setTheme(app)
 
-    #define icone da aplicação
+    # define icone da aplicação
     icon = QIcon(str(ICON_PATH))
     window.setWindowIcon(icon)
     app.setWindowIcon(icon)
@@ -32,7 +32,7 @@ if __name__ == '__main__':
     window.addGridtoVLayout(display)
 
     # grid for buttons
-    buttonsGrid = ButtonGrid(display, info)
+    buttonsGrid = ButtonGrid(display, info, window)
     window.vLayout.addLayout(buttonsGrid)
 
     # Button
@@ -40,7 +40,6 @@ if __name__ == '__main__':
     # buttonsGrid.addWidget(Button('1'), 0, 1)
     # buttonsGrid.addWidget(Button('2'), 0, 2)
     # buttonsGrid.addWidget(Button('3'), 1, 0)
-
 
     window.adjustFixedSize()
     window.show()

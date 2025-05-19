@@ -17,6 +17,27 @@ qss = f"""
         background: {DARKEST_PRIMARY_COLOR};
         border-radius: 5px;
     }}
+    Button[cssClass="normalButton"]{{
+        color: #fff;
+        background: {DARKEST_PRIMARY_COLOR};
+        border-color: {DARKER_PRIMARY_COLOR};
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+    }}
+    Button[cssClass="normalButton"]:hover{{
+        color: #fff;
+        background: {DARKER_PRIMARY_COLOR};
+        border-radius: 5px;
+    }}
+    Button[cssClass="normalButton"]:pressed{{
+        color: #fff;
+        background: {PRIMARY_COLOR};
+        border-color: {DARKER_PRIMARY_COLOR};
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+    }}
 """
 
 def setTheme(app):

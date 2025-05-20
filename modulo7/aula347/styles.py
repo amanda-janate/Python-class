@@ -1,7 +1,19 @@
-import qdarkstyle
-from vars import PRIMARY_COLOR, DARKER_PRIMARY_COLOR, DARKEST_PRIMARY_COLOR
+# import qdarkstyle
+from vars import (PRIMARY_COLOR, DARKER_PRIMARY_COLOR, DARKEST_PRIMARY_COLOR,
+                  BACKGORUND_COLOR, DISPLAY_COLOR)
 
 qss = f"""
+    MainWindow[cssClass="body"]{{
+        background-color: {BACKGORUND_COLOR};
+    }}
+    Info[cssClass="info"]{{
+        color: {DISPLAY_COLOR};
+    }}
+    Display[cssClass="display"]{{
+        background-color: {DISPLAY_COLOR};
+        border-color: {PRIMARY_COLOR};
+        border-radius: 5px;
+    }}
     Button[cssClass="specialButton"]{{
         color: #fff;
         background: {PRIMARY_COLOR};
@@ -41,7 +53,10 @@ qss = f"""
 """
 
 
-def setTheme(app):
-    app.setStyleSheet(qdarkstyle.load_stylesheet_pyside6())
-
-    app.setStyleSheet(app.styleSheet() + qss)
+def setTheme(app, window, display, info):
+    # app.setStyleSheet(qdarkstyle.load_stylesheet_pyside6())
+    # app.setStyleSheet(app.styleSheet() + qss)
+    app.setStyleSheet(qss)
+    window.setProperty('cssClass', 'body')
+    display.setProperty('cssClass', 'display')
+    info.setProperty('cssClass', 'info')

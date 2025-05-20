@@ -19,3 +19,14 @@ def isValidNumber(string: str):
 
 def isEmpty(string: str):
     return len(string) == 0
+
+
+def convertToNumber(str):
+    number = float(str)
+
+    if number.is_integer():
+        number = int(number)
+    else:
+        number = round(number, 3)
+
+    return number

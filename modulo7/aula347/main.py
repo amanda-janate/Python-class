@@ -15,9 +15,6 @@ if __name__ == '__main__':
     app = QApplication(sys.argv)
     window = MainWindow()
 
-    # Theme
-    setTheme(app)
-
     # define icone da aplicação
     icon = QIcon(str(ICON_PATH))
     window.setWindowIcon(icon)
@@ -30,6 +27,9 @@ if __name__ == '__main__':
     # display
     display = Display()
     window.addGridtoVLayout(display)
+
+    # Theme
+    setTheme(app, window, display, info)
 
     # grid for buttons
     buttonsGrid = ButtonGrid(display, info, window)
